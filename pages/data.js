@@ -5,7 +5,7 @@ export default function DataPage() {
   const [entries, setEntries] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/data').then(res => setEntries(res.data));
+    axios.get('https://form-app-backend.onrender.com/api/data').then(res => setEntries(res.data));
   }, []);
 
   return (
