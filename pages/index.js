@@ -10,7 +10,7 @@ export default function FormPage() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('https://form-app-backend.onrender.com/api/submit', form);
+      await axios.post('https://express-form-api.onrender.com/api/submit', form);
       setMessage('✅ Submitted successfully');
       setForm({ name: '', email: '', age: '', gender: '', feedback: '' });
     } catch (err) {
